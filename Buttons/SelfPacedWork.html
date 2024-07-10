@@ -955,6 +955,29 @@
 audio.play();
 </code></pre>
 <p>It is simply a matter of placing that code into the body of a function - after that, the sound should play whenever the function is called!</p>
+<h2 id="challenge-text-to-speech">Challenge: Text to Speech</h2>
+<p>Instead of having the program play pre-recorded audio files, change the code so that your &quot;quotes&quot; are read aloud by the browser&apos;s text to Speech!</p>
+<h3 id="step-1-adding-new-functions-to-each-button">Step 1: Adding New Functions to Each Button</h3>
+<p>For each button, define a new function, for example &quot;TTS1&quot; that will be called when the button is pressed. </p>
+<h3 id="step-2-adding-text-to-speech-functionality">Step 2: Adding Text to Speech Functionality</h3>
+<p>In the javascript file script.js, add a Text to Speech function that reads the quote corresponding to the aformentioned button. More information can be found on <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis" target="_blank">this website</a>.</p>
+<p>An example is shown below, using the function &quot;TTS1&quot;. </p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TTS1</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> message = <span class="hljs-keyword">new</span> SpeechSynthesisUtterance();
+
+  message.text = <span class="hljs-string">&quot;Don&#x2019;t be too proud of this technological terror you&#x2019;ve constructed. The ability to destroy a planet is insignificant next to the power of the Force.&quot;</span>;
+
+
+  message.pitch = <span class="hljs-number">0.1</span>; 
+
+  <span class="hljs-keyword">const</span> speechSynthesis = <span class="hljs-built_in">window</span>.speechSynthesis;
+
+  speechSynthesis.speak(message);
+
+  alert(<span class="hljs-string">&quot;Don&#x2019;t be too proud of this technological terror you&#x2019;ve constructed. The ability to destroy a planet is insignificant next to the power of the Force.&quot;</span>);
+}
+</code></pre>
+<p>Feel free to play around with the code and add alerts, change the pitch of the voice, and much more!</p>
 
                                 
                                 </section>
@@ -998,7 +1021,7 @@ audio.play();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.5.2","depth":2,"next":{"title":"Challenges","level":"1.5.3","depth":2,"path":"Buttons/Challenges.md","ref":"Buttons/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.5.1","depth":2,"path":"Buttons/SoundboardCodeAlong.md","ref":"Buttons/SoundboardCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"Buttons/SelfPacedWork.md","mtime":"2024-07-10T17:19:28.016Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-10T17:19:58.314Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Self-Paced Work","level":"1.5.2","depth":2,"next":{"title":"Challenges","level":"1.5.3","depth":2,"path":"Buttons/Challenges.md","ref":"Buttons/Challenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.5.1","depth":2,"path":"Buttons/SoundboardCodeAlong.md","ref":"Buttons/SoundboardCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"Buttons/SelfPacedWork.md","mtime":"2024-07-10T17:46:32.564Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-10T17:47:05.456Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
