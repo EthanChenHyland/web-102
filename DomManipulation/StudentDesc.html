@@ -897,7 +897,7 @@
 <p>Learn how to use JavaScript to capture input from a webpage.</p>
 <style>
         .text {
-            font-size: 16px;
+            font-size: 12px;
         }
     </style>
 
@@ -907,7 +907,7 @@
 <script>
 document.addEventListener('keydown', function(event) {
     if (event.key >= '1' && event.key <= '9') {
-        const textSize = event.key * 10; 
+        const textSize = (event.key * 2)+10; 
         const textElement = document.getElementById('text');
         textElement.style.fontSize = textSize + 'px';
     }
@@ -973,7 +973,7 @@ document.addEventListener('keydown', function(event) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 7 - DOM Manipulation (Read from Input)","level":"1.8","depth":1,"next":{"title":"Warm-Up","level":"1.8.1","depth":2,"path":"DomManipulation/WarmUp.md","ref":"DomManipulation/WarmUp.md","articles":[]},"previous":{"title":"Library","level":"1.7.3","depth":2,"path":"MidSemesterReview/Library.md","ref":"MidSemesterReview/Library.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"DomManipulation/StudentDesc.md","mtime":"2024-08-05T18:49:27.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-08-05T18:49:58.609Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Week 7 - DOM Manipulation (Read from Input)","level":"1.8","depth":1,"next":{"title":"Warm-Up","level":"1.8.1","depth":2,"path":"DomManipulation/WarmUp.md","ref":"DomManipulation/WarmUp.md","articles":[]},"previous":{"title":"Library","level":"1.7.3","depth":2,"path":"MidSemesterReview/Library.md","ref":"MidSemesterReview/Library.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"DomManipulation/StudentDesc.md","mtime":"2024-08-05T18:54:07.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-08-05T18:54:36.866Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
