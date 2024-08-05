@@ -895,6 +895,21 @@
                                 
                                 <h1 id="dom-manipulation-update-html">DOM Manipulation (Update HTML)</h1>
 <p>Learn how to update the HTML elements on a webpage using JavaScript.</p>
+<p><ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button></p>
+ <script>
+        function addItem() {
+            let newItem = document.createElement('li');
+            newItem.textContent = 'New Item';
+            document.getElementById('itemList').appendChild(newItem);
+        }
+    </script>
+
+
+
 <h2 id="powerpoint-presentation">PowerPoint Presentation</h2>
 <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/web-102/DomManipulationContinued/DomManipulationContinued.pptx" width="100%" height="450px" frameborder="0"></iframe>
 
@@ -955,7 +970,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 8 - DOM Manipulation (Update HTML)","level":"1.9","depth":1,"next":{"title":"Guide","level":"1.9.1","depth":2,"path":"DomManipulationContinued/DomManipulationUpdateHtml.md","ref":"DomManipulationContinued/DomManipulationUpdateHtml.md","articles":[]},"previous":{"title":"Challenges","level":"1.8.5","depth":2,"path":"DomManipulation/Challenges.md","ref":"DomManipulation/Challenges.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"DomManipulationContinued/StudentDesc.md","mtime":"2024-08-05T19:19:37.251Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-08-05T19:20:07.386Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Week 8 - DOM Manipulation (Update HTML)","level":"1.9","depth":1,"next":{"title":"Guide","level":"1.9.1","depth":2,"path":"DomManipulationContinued/DomManipulationUpdateHtml.md","ref":"DomManipulationContinued/DomManipulationUpdateHtml.md","articles":[]},"previous":{"title":"Challenges","level":"1.8.5","depth":2,"path":"DomManipulation/Challenges.md","ref":"DomManipulation/Challenges.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"variables":{},"title":"Web 102","gitbook":"*"},"file":{"path":"DomManipulationContinued/StudentDesc.md","mtime":"2024-08-05T19:23:17.945Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-08-05T19:23:48.388Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
